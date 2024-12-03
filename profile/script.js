@@ -15,15 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     links.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
+            const href = this.getAttribute('href');
 
-            const sectionId = this.getAttribute('href').substring(1);
-            const section = document.getElementById(sectionId);
+            if (href.startsWith('#')) {
+                e.preventDefault();
 
-            window.scrollTo({
-                top: section.offsetTop - 50,
-                behavior: 'smooth'
-            });
+                const sectionId = href.substring(1); 
+                const section = document.getElementById(sectionId);
+
+                if (section) {
+                    window.scrollTo({
+                        top: section.offsetTop - 50,
+                        behavior: 'smooth'
+                    });
+                }
+            }
         });
     });
 });

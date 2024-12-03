@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home &#x2022; MBE</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="Assets/icons/icons8-utility-64.png" type="image/x-icon">
+</head>
+<body>
+<div id="main">
+    <div id="navbar"></div>
+
+    <script>
+        fetch('Navbar/navbar.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <div id="cursor"></div>
+    <div id="page1">
+        <h1>PICK</h1>
+        <h1>THE BEST</h1>
+        <br> <br> <hr> <br>
+        <h2 id="Products">Explore different brands with us</h2>
+        <h3>1. DOMS</h3>
+        <div id="banner-container">
+            <img src="/Assets/doms/DOMS Logo.png" alt="/Assets/doms/DOMS Logo.png"></img>
+        </div>
+        <h4>Checkout the various stationary items by DOMS here,</h4>
+        <div class="image-container">
+            <div class="image-box">
+                <img src="/Assets/doms/Crafts&Hobbyist.jpg" alt="Image 1">
+                <a href="/Doms/crafts-hobbyist/" class="image-text">Crafts & Hobbyist</a>
+            </div>
+            <div class="image-box">
+                <img src="/Assets/doms/Drawing&Colouring.jpg" alt="Image 2">
+                <a href="/Doms/drawing-colouring/" class="image-text">Drawing & Colouring</a>
+            </div>
+            <div class="image-box">
+                <img src="/Assets/doms/FineArt.jpg" alt="Image 3">
+                <a href="/Doms/fine-art/" class="image-text">Fine Art</a>
+            </div>
+            <div class="image-box">
+                <img src="/Assets/doms/Marker&Highlighter.jpg" alt="Image 4">
+                <a href="/Doms/marker-highlighter/" class="image-text">Marker & Highlighter</a>
+            </div>
+            <div class="image-box">
+                <img src="/Assets/doms/MathematicalInstruments.jpg" alt="Image 5">
+                <a href="/Doms/mathematical-instruments/" class="image-text">Mathematical Instruments</a>
+            </div>
+            <div class="image-box">
+                <img src="/Assets/doms/PaperStationary.png" alt="Image 6">
+                <a href="/Doms/paper-stationary/" class="image-text">Paper Stationary</a>
+            </div>
+            <div class="image-box">
+                <img src="/Assets/doms/Pens&WritingInstruments.jpg" alt="Image 7">
+                <a href="/Doms/pens-writing-instruments/" class="image-text">Pens & Writing Instruments</a>
+            </div>
+            <div class="image-box">
+                <img src="/Assets/doms/Pencils&Accessories.jpg" alt="Image 8">
+                <a href="Doms/pencils-accessories/" class="image-text">Pencils & Accessories</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="base.js"></script>
+</body>
+</html>

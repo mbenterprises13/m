@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMS: Pens & Writing Instruments</title>
+    <link rel="stylesheet" href="../../cart.css">
+    <link rel="stylesheet" href="../../home.css">
+    <script src="https://kit.fontawesome.com/5de24f2f58.js" crossorigin="anonymous"></script>    
+    <link rel="icon" href="../../Assets/icons/icons8-utility-64.png" type="image/x-icon">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div class="cart-positioner">
+        <div class="cart-counter">
+            <div class="cart-flex-wrapper">
+                <div class="cart-flex">
+                <div class="cart-counter-binder" title="Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart-indicator"> 
+                    : 0 items</div>
+                </div>
+                <button title="Empty Cart" type="button" class="cart-remove-button" onclick="emptyCart()">
+                    <i class="fa-solid fa-trash-can remove-icon"></i>
+                </button>
+            </div>
+            </div>
+            
+            <button type="button" class="cart-button" onclick="generateWhatsAppMessage()">BUY NOW</button>
+        </div>
+    </div>
+    
+    
+    <main>
+        <h1 class="product-grid-title">Pens & Writing Instruments</h1>
+        <div class="product-grid-container"></div>
+    </main>
+    <script src="../../base.js"></script>
+    <script src="../../cart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
